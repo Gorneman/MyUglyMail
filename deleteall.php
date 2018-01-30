@@ -6,10 +6,10 @@ require('core/config.php');
 
 $f = htmlentities($_GET['folder'], ENT_QUOTES, 'utf-8');
 if (empty($f)) {
-	$f = 'Inbox';
+	$f = 'INBOX';
 }
 
-$t = 'Trash';
+$t = 'Cestino';
 $ibox = imap_open($IMAP.$f, $_SESSION['email'], $_SESSION['pass']);
 imap_reopen($ibox,$IMAP.$t) or die(implode(", ", imap_errors()));
 //$curr_obj = imap_check($ibox);
