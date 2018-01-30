@@ -1,16 +1,16 @@
 {
   "require": {
-    "php": "^7.1.0",
-    "bcmath":"*",
-    "calendar":"*",
-    "gd":"*",
-    "gettext":"*",
-    "imap":"*",
-    "mbstring":"*",
-    "mcrypt":"*",
-    "intl":"*",
-    "soap":"*",
-    "xmlrpc":"*"
+    "php": "^7.0.0",
+    "ext-bcmath":"*",
+    "ext-calendar":"*",
+    "ext-gd":"*",
+    "ext-gettext":"*",
+    "ext-imap":"*",
+    "ext-mbstring":"*",
+    "ext-mcrypt":"*",
+    "ext-intl":"*",
+    "ext-soap":"*",
+    "ext-xmlrpc":"*"
   }
 }
 
