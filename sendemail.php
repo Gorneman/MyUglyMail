@@ -34,7 +34,7 @@ foreach ($folders as $folder) {
     if(strtolower($folder) == 'trash' || strtolower($folder) == 'cestino'){
 
     	$menu .= '<li><a href="inbox.php?folder=' . $folder . '&func=view">  <i class="fa fa-trash-o"></i> Cestino </a></li>';
-	}else if(strtolower($folder) == 'sent' || strtolower($folder) == 'inviato'){
+	}else if(strtolower($folder) == 'sent' || strtolower($folder) == 'posta inviata' || strtolower($folder) == 'inviato'){
 
 		$menu .= '<li><a href="inbox.php?folder=' . $folder . '&func=view">  <i class="fa fa-send-o"></i> Posta inviata </a></li>';
 	}else if(strtolower($folder) == 'inbox' || strtolower($folder) == 'in arrivo' || strtolower($folder) == 'ricevuto'){
