@@ -1,7 +1,7 @@
 <?php
 //========================================================================
 // IMAP SETTINGS
-$IMAPhost = 'imap.mail.yahoo.com';
+$IMAPhost = 'in.virgilio.it';
 $IMAPport = '993';
 $IMAPssl = 'ssl';
 
@@ -10,7 +10,7 @@ $IMAPssl = 'ssl';
 $IMAP = '{'.$IMAPhost.':'.$IMAPport.'/imap/'.$IMAPssl.'/novalidate-cert}';
 
 // SMTP settings hostname for phpmailer
-$SMTPdomain = 'smtp.mail.yahoo.com';
+$SMTPdomain = 'out.virgilio.it';
 //SMTP port 25 or 587 or 465
 $SMTPPort = 587;
 // SMTP tls or ssl type
