@@ -1,7 +1,7 @@
 <?php
 // funzione per la connessione al database
 function dbConnect() {
-  $conn = mysqli_connect("sabaik6fx8he7pua.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "ksg0yf698l1abox5", "bu9s3glga31y01wf", "ywpuphn4dt5y5qv7")
+  $conn = mysqli_connect("sabaik6fx8he7pua.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", "pc1wwpzveg67so2z", "j79vlnu2w648nn5t", "lpjgisqqezruieqh")
     or die("Errore nella connessione al db: " . mysqli_error($conn));
 
   return $conn;
