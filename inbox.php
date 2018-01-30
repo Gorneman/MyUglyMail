@@ -62,8 +62,8 @@ echo "</ul>";
 
 $del = (int)$_GET['msgid'];
 if (!empty($del)) {
-	$trash = 'Trash';
-	if ($f == 'Trash') {
+	$trash = 'Cestino';
+	if ($f == 'Cestino') {
 		$trash = 'INBOX';
 	}
 
