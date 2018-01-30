@@ -1,0 +1,16 @@
+{
+  "require": {
+    "php": "^7.1.0",
+    "bcmath":"*",
+    "calendar":"*",
+    "gd":"*",
+    "gettext":"*",
+    "imap":"*",
+    "mbstring":"*",
+    "mcrypt":"*",
+    "intl":"*",
+    "soap":"*",
+    "xmlrpc":"*"
+  }
+}
+
