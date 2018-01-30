@@ -112,13 +112,12 @@ $ip = $_SERVER['REMOTE_ADDR'];
 		}
 
 
-
 		$dir = $_SERVER['DOCUMENT_ROOT'];
 		$file = 'logs/SendMailLog-'.date('d-m-Y-H', time()).'.txt'; //operation log
 
 		if(!$mail->Send()) {
 			$time = date('d-m-Y H:i:s', time());
-		  	$err = $time." ###Mailer Error confirmation : " . $mail->ErrorInfo . " ###MAIL" . $email."<br>\r\n";
+		  	$err = $time." ###Mailer Error confirmation : " . $mail->ErrorInfo . " ###MAIL " . $email."<br>\r\n";
 		  	file_put_contents($file, $err, FILE_APPEND);
 		  	echo '<p class="toperror">Nessun messaggio è stato inviato all\'indirizzo email fornito.</p>';
 		} else {
@@ -131,11 +130,10 @@ $ip = $_SERVER['REMOTE_ADDR'];
 
 		}
 
-
 		$boundary1 = "###".md5(microtime())."###";
 		$boundary2 = "###".md5(microtime().rand(9,999))."###";
-		imap_append($ibox, $IMAP."Send"
-			, "From: Hello <".$IMAPuser.">\r\n"
+		imap_append($ibox, $IMAP."Posta Inviata"
+			, "From: <".$IMAPuser.">\r\n"
 			. "To: ".$email."\r\n"
 			. "Date: $dmy\r\n"
 			. "Subject: ".quoted_printable_encode($sub)."\r\n"
